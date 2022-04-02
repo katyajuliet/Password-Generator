@@ -22,19 +22,19 @@ if (userPL >= 8 && userPL <= 128){
     var symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
     var numbers = '0123456789';
 
-    if (lowerLetter === true) {
+    if (lowerLetter === true, lowerLetter !== false) {
       randomString += lowercase
     };
 
-    if (upperLetter === true) {
+    if (upperLetter === true, upperLetter !== false) {
       randomString += uppercase
     };
 
-    if (num === true) {
+    if (num === true, num !== false) {
       randomString += numbers
     };
     
-    if (spChar === true) {
+    if (spChar === true, spChar !== false) {
       randomString += symbols
     };
 
@@ -49,7 +49,7 @@ if (userPL >= 8 && userPL <= 128){
 }
     else {
       console.log("too few or too many characters.")
-      alert ("Password must be between 8 and 128 characters.");
+      prompt ("Password must be between 8 and 128 characters.");
     }
 
 

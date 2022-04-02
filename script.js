@@ -38,18 +38,18 @@ if (userPL >= 8 && userPL <= 128){
       randomString += symbols
     };
 
-    var password = "";
-    for (var i = 0; i < password; i++) {
+    var password = '';
+    for (var i = 0; i < userPL; i++) {
       password +=  randomString.charAt(Math.floor(Math.random() * randomString.length));
     }
-  
+
     console.log(password)
     return password;
   }
 }
     else {
       console.log("too few or too many characters.")
-      alert("Password must be between 8 and 128 characters.");
+      alert ("Password must be between 8 and 128 characters.");
     }
 
 

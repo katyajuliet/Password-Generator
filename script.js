@@ -5,12 +5,13 @@ var upperLetter = confirm("Do you want upper case letters?")
 var num = confirm("Do you want numbers?")
 var spChar = confirm("Do you want special characters?")
 var passwordLength = confirm("Pick a password length between 8 and 128 characters.")
+var userPL = parseInt(passwordLength)
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Writing conditional else/if
-if (passwordLength >= 8 && passwordLength <= 128);{
+if (userPL >= 8 && userPL <= 128){
   function generatePassword() {
     var undefinedString = "";
     var lowercase = 'abcdefghijklmnopqrstuvwxyz';
@@ -34,13 +35,19 @@ if (passwordLength >= 8 && passwordLength <= 128);{
       undefinedString += symbols
     };
 
+    var password = "";
+    for (var i = 0; i < password; i++) {
+      password +=  
+    }
+  
+    console.log(password)
     return password;
-
-
-
-
   }
 }
+    else {
+      console.log("too few or too many characters.")
+      alert("Password must be between 8 and 128 characters.");
+    }
 
 
 // Write password to the #password input

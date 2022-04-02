@@ -37,7 +37,7 @@ if (userPL >= 8 && userPL <= 128){
 
     var password = "";
     for (var i = 0; i < password; i++) {
-      password +=  
+      password +=  undefinedString.charAt()
     }
   
     console.log(password)

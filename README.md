@@ -10,4 +10,3 @@ https://katyajuliet.github.io/Password-Generator/
 ## Screenshot 
 
 <img src="./images/password-gen-screenshot.png" alt="password generator screenshot">
-

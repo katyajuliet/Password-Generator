@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 var lowerLetter = confirm("Do you want lower case letters?")
 var upperLetter = confirm("Do you want upper case letters?")
-var num = confirm("Do you want numbers?")
+var num = confirm ("Do you want numbers?")
 var spChar = confirm("Do you want special characters?")
 var passwordLength = prompt ("Pick a password length between 8 and 128 characters.")
 var userPL = parseInt(passwordLength)
@@ -22,19 +22,19 @@ if (userPL >= 8 && userPL <= 128){
     var symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
     var numbers = '0123456789';
 
-    if (lowerLetter === true, lowerLetter !== false) {
+    if (lowerLetter) {
       randomString += lowercase
     };
 
-    if (upperLetter === true, upperLetter !== false) {
+    if (upperLetter) {
       randomString += uppercase
     };
 
-    if (num === true, num !== false) {
+    if (num) {
       randomString += numbers
     };
     
-    if (spChar === true, spChar !== false) {
+    if (spChar) {
       randomString += symbols
     };
 
@@ -49,7 +49,7 @@ if (userPL >= 8 && userPL <= 128){
 }
     else {
       console.log("too few or too many characters.")
-      prompt ("Password must be between 8 and 128 characters.");
+      confirm ("Password must be between 8 and 128 characters.");
     }
 
 
